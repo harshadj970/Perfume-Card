@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lemon" type="text/css"/> 
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/thai-font" type="text/css"/>
+    
+    <script src="https://kit.fontawesome.com/f9319d3e8b.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.848);
+        }
+        .container>img{
+            height: 400px;
+            width: 350px;
+            object-fit: cover;
+            border-radius: 1em 0 0 1em;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            line-height:1.6em;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            letter-spacing: 2px;
+        }
+        
+        .about{
+            text-align: center;
+            box-sizing: border-box;
+            width: 350px;
+            background-color: white;
+            padding: 1em;
+            height: 400px;
+            border-radius: 0 1em 1em 0;
+        }
+        button:hover{
+            box-shadow: 0 0 2em rgb(255, 213, 0);
+            transform: scale(1.2);
+            color: black;
+        }
+        img:hover{
+            filter: saturate(1.4);
+            
+        }
+        button{
+            height: 40px;
+            width: 150px;
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            font-size: 1em;
+            color: white;
+            background-color: #fad038;
+            margin: 0px auto;
+            margin-top: 1.5em;
+            font-family: 'ItimRegular'; 
+        }
+        p{
+            color: rgba(0, 0, 0, 0.573);
+        }
+        .one{
+            font-size: 2em;
+            font-family: 'LemonRegular';
+            font-weight: normal;
+            font-style: normal; 
+        }
+        .two{
+            position: relative;
+            bottom: 9px;
+            margin-left: 8px;
+            text-decoration: line-through;
+        }
+        @media (max-width:45em){
+            .container{
+                flex-wrap: wrap;
+                flex: 0 1 350px;
+            }
+            .container>img{
+                border-radius: 1em 1em 0 0;
+            }
+            .about{
+                border-radius: 0 0 1em 1em;
+                flex: 0 1 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="girl.jpg" alt="">
+        <div class="about">
+            <p>PERFUME</p>
+            <h2>Gabreielle Essense Eau Da Perfume</h2>
+            <p>A floral,solar and voluptuous interpretation composed by Olivier Polge,Perfumer-Creator for the House of CHANEL.</p>
+            <span class="one">$149.99</span>
+            <span class="two">$169.99</span>
+            <button><i class="fa-solid fa-cart-shopping fa-xl"></i>  Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
